@@ -5,6 +5,8 @@
   2. В строке, состоящей из групп нулей и единиц, найти и вывести на экран самую короткую группу.
 */
 
+// Solution was made by vector
+
 #include <iostream>
 #include <vector>
 
