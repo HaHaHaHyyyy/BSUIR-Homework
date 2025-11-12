@@ -14,6 +14,26 @@
 */
 #include <iostream>
 
+int32_t true_input () { // Check that input number is number
+  char input[255];
+  bool is_number;
+
+  do {
+    std::cin >> input;
+    is_number = true;
+    size_t curr = 0;
+    for (;input[curr] != '\0'; ++curr) {
+      if (input[curr] > '9' || input[curr] < '0') {
+        std::cout << "Incorrect data!\nTrue again:\n";
+        is_number = false;
+        break;
+      }
+    }
+  } while (!is_number);
+
+  return std::stoi(input);
+}
+
 struct Student {
   char surname[255] = {'\0'};
   char initial_1[255] = {'\0'};
@@ -43,13 +63,6 @@ struct Student {
 
   friend std::ostream& operator<<(std::ostream& os, const Student& student);
   friend std::istream& operator>>(std::istream& in, Student& student);
-  
-  /*
-  std::basic_iostream<char> operator<<(Student a) {
-    char output[255] = ;
-    return (this->surname + this->initial_1 + initial_2 + date_of_birth + group);
-  }
-    */
 };
 
 std::ostream& operator << (std::ostream& os, const Student& student) {
@@ -85,28 +98,6 @@ std::istream& operator >> (std::istream& in, Student& student) {
   return in;
 }
 
-
-
-int32_t true_input () { // std::cin but check that input number is number
-  char input[255];
-  bool is_number;
-
-  do {
-    std::cin >> input;
-    is_number = true;
-    size_t curr = 0;
-    for (;input[curr] != '\0'; ++curr) {
-      if (input[curr] > '9' || input[curr] < '0') {
-        std::cout << "Incorrect data!\nTrue again:\n";
-        is_number = false;
-        break;
-      }
-    }
-  } while (!is_number);
-
-  return std::stoi(input);
-}
-
 int main () {
   size_t n;
   bool no_one_grade_student_with_letter = true;
@@ -131,8 +122,6 @@ int main () {
       }
     }
   }
-
-  // добавить ввод чара и ыыыыыыы
 
   char f_let;
   std::cout << "Type letter:\n";
@@ -160,19 +149,20 @@ int main () {
 
   if (no_one_grade_student) {
     std::cout << "No one grade student in all!!!\n";
-    // return 0;
+    return 0;
   }
 
   if (no_one_grade_student_with_letter && !no_one_grade_student) {
     std::cout << "No one grade student with this letter!!!\n";
-    // return 0;
+    return 0;
   }
 
+  /* ---For-debug--- */
   std::cout << "All students:\n";
-
   for (size_t curr = 0; curr < n; ++curr) {
     std::cout << "Student: " << our_group[curr] << std::endl;
   }
+  /* ---For-debug--- */
 
   std::cout << "Eeeend" << std::endl;
   return 0;

@@ -9,3 +9,5 @@ All my homeworks
 | Основы алгоритмизации и программирования | Fundamentals of Algorithmization and Programming | FAP          |
 | Основы инфокоммуникационных технологий   | Fundamentals of Infocommunication Technologies   | FIT          |
 ### Second semester:
+
+## Something about struct of repo:
