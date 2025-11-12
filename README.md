@@ -8,3 +8,4 @@ All my homeworks
 | Веб-технологии в инфокоммуникациях       | Web technologies in infocommunications           | WTI          |
 | Основы алгоритмизации и программирования | Fundamentals of Algorithmization and Programming | FAP          |
 | Основы инфокоммуникационных технологий   | Fundamentals of Infocommunication Technologies   | FIT          |
+### Second semester:
