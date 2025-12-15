@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verso - VSO Token</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(to bottom, #3b8dff, #0050c7);
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .btn-buy {
+            padding: 8px 15px;
+            background-color: #fff;
+            color: #3b8dff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .listings {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+        .listings div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .guide {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .guide img {
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        table {
+            width: 80%;
+            margin: 0 auto 30px auto;
+            background-color: white;
+            color: #333;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            background-color: #0050c7;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 250px;
+        }
+        .newsletter button {
+            padding: 10px 15px;
+            background-color: #fff;
+            color: #0050c7;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><h2>VERSO</h2></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Why Verso</a>
+        <a href="#">Team</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Blog</a>
+        <a href="#">Whitepaper</a>
+        <a href="#" class="btn-buy">Buy $VSO</a>
+    </nav>
+</header>
+
+<section>
+    <h1>How to buy VSO</h1>
+    <p>Verso (VSO) is currently available on Gate.io and decentralized exchanges (DEX) connected to Avalanche.</p>
+
+    <div class="listings">
+        <div>
+            <h3>CEX Listings</h3>
+            <img src="gateio.png" alt="Gate.io" width="150">
+        </div>
+        <div>
+            <h3>DEX Listings</h3>
+            <img src="pangolin.png" alt="Pangolin" width="150">
+            <img src="traderjoe.png" alt="Trader Joe" width="150">
+            <img src="dctdao.png" alt="DCTDAO" width="150">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h1>How to add VSO to Metamask</h1>
+    <div class="guide">
+        <div>
+            <img src="metamask_network.png" alt="Metamask Network">
+            <p>1. Connect Metamask to Avalanche C-Chain.</p>
+        </div>
+        <div>
+            <img src="metamask_token.png" alt="Metamask Add Token">
+            <p>2. Add VSO token contract address.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h1>VSO Staking Opportunities</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Staking Pool</th>
+                <th>Earn</th>
+                <th>APY*</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Liquidity for DWETH–VSO</td>
+                <td>VSO</td>
+                <td>65%</td>
+                <td>Wrapped ETH on Avalanche (DCTDAO bridge)</td>
+            </tr>
+            <tr>
+                <td>Liquidity for AVAX–VSO</td>
+                <td>PNG</td>
+                <td>12%</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Liquidity for PNG–VSO</td>
+                <td>PNG</td>
+                <td>63%</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Liquidity for WAVAX–VSO</td>
+                <td>PNG+JOE</td>
+                <td>402%</td>
+                <td>Double-Reward farm</td>
+            </tr>
+            <tr>
+                <td>Stake VSO</td>
+                <td>VSO</td>
+                <td>99%</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Stake + Lock VSO</td>
+                <td>VSO</td>
+                <td>>200%</td>
+                <td>Launching soon</td>
+            </tr>
+        </tbody>
+    </table>
+    <small>* APY may vary depending on pool setup and duration.</small>
+</section>
+
+<footer>
+    <h2>Subscribe to our newsletter</h2>
+    <div class="newsletter">
+        <input type="email" placeholder="Email address">
+        <button>Subscribe</button>
+    </div>
+    <p>&copy; 2021 Verso Network AG. All rights reserved.</p>
+    <p>
+        <a href="#" style="color:white;">Privacy Policy</a> |
+        <a href="#" style="color:white;">Terms of Service</a>
+    </p>
+</footer>
+
+</body>
+</html>
